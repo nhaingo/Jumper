@@ -1,4 +1,23 @@
+from asyncio.constants import SENDFILE_FALLBACK_READBUFFER_SIZE
+
+
 class Picture:   
+    def __init__(self):
+    # 2) Create the class constructor. Use the following method comment.
+        """Constructs a new Picture.
+
+        Args:
+            self (Picture): An instance of Picture.
+        """
+        self.image =[[" _____"],
+                    ["/","_____","\ "],
+                    ["\ ","    /"],
+                    [" \ ",   "  /"],
+                    ["   O"],["  /|\ "],["  / \ "]] 
+    #def display_image(self,image): ==> To insert and print in the result (terminal services)
+        #print(image)
+    
+
     def draw_zero_wrong(self):
         print('  _____  ')
         print(' /_____\\')
@@ -40,7 +59,8 @@ class Picture:
         print('   / \\')
         print('')
         print('^^^^^^^^^')
-        
+
+
         
 #for testing:
 # jumper = Picture()

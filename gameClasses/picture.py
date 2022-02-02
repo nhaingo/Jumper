@@ -1,6 +1,3 @@
-from asyncio.constants import SENDFILE_FALLBACK_READBUFFER_SIZE
-
-
 class Picture:   
     def __init__(self):
     # 2) Create the class constructor. Use the following method comment.

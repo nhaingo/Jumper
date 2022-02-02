@@ -5,6 +5,9 @@ class Random_word:
 	Arguments: 
 		Self (Random_word): an instance of Random_word. """
 	
+	def __init__(self):
+		self.word = ''
+	
 	def generate_word(self):
 		"""This method generates a random word for the game. It uses the file word_list.txt as its word bank
 		
@@ -14,8 +17,8 @@ class Random_word:
 		with open("gameClasses\word_list.txt", "r") as file:
 			allText = file.read()
 			words = list(map(str, allText.split()))
-			word = random.choice(words)
-			return word
+			self.word = random.choice(words)
+			return self.word
 			
 			
 #test code:

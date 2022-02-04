@@ -1,9 +1,9 @@
 from random_word import Random_word
 """
 attrubites:
-    _picture
-    _random_word
-    _guess
+    picture
+    random_word
+    guess
 
 methods:
     start game

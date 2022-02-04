@@ -1,6 +1,6 @@
 # Jumper
 A, B, C …Play with me! Are you lucky enough to keep your head until the end? This is going to be challenging, but a lot of fun, full of excitement.  
-**Jumper** is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. The console choose 5 random letters for the player to guess. Player is prompted to input a letter one at a time. If the player guesses the right letter, it replaces the right dash. If the guess is wrong, one dash from the parachute is cut(deleted), and so on. The game will end if all the parts of the parachute are removed and the player loses his head. If he/she finds all 5 random letters before losing his head, the player wins.
+**Jumper** is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time. The console choose a random word for the player to guess. Player is prompted to input a letter one at a time. If the player guesses the right letter, it replaces the right dash. If the guess is wrong, one dash from the parachute is cut(deleted), and so on. The game will end if all the parts of the parachute are removed and the player loses his head. If he/she finds all 5 random letters before losing his head, the player wins.
 
 ---
 ## Getting Started

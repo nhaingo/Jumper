@@ -3,17 +3,35 @@ class Picture:
     # 2) Create the class constructor. Use the following method comment.
         """Constructs a new Picture.
 
-        Args:
-            self (Picture): An instance of Picture.
+        Attribute:
+            self (chute): Picture of a parachute.
+            self (head): O - still in the game
+            self (dead_head): X - losing game.
+            self (body): The jumper's body and ground
+            MAX_WRONG_INPUT: 4 incorrect guess.
+
+        
+        Methods:
+            draw_jumper(number of wrong answers)
+        
         """
-        self.image =[[" _____"],
-                    ["/","_____","\ "],
-                    ["\ ","    /"],
-                    [" \ ",   "  /"],
-                    ["   O"],["  /|\ "],["  / \ "]] 
+        self.chute =[[" _____"],
+                     ["/_____\ "],
+                     ["\     /"],
+                     [" \   /"],
+                     ["   O"],
+                     ["  /|\ "],
+                     ["  / \ "]] 
+        
+                    # [["   X"],
+                    #  ["  /|\ "],
+                    #  ["  / \ "]]                      
     #def display_image(self,image): ==> To insert and print in the result (terminal services)
         #print(image)
     
+    def draw_jumper(self, num_wrong):
+        for line in range(num_wrong, len(self.image)):
+            print(self.image[line][0])
 
     def draw_zero_wrong(self):
         print('  _____  ')
@@ -58,9 +76,14 @@ class Picture:
         print('^^^^^^^^^')
 
 
-        
+   
 #for testing:
-# jumper = Picture()
+jumper = Picture()
+jumper.draw_jumper(0)
+jumper.draw_jumper(1)
+jumper.draw_jumper(2)
+jumper.draw_jumper(3)
+jumper.draw_jumper(4)
 # jumper.draw_zero_wrong()
 # jumper.draw_one_wrong()
 # jumper.draw_two_wrong()

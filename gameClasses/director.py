@@ -1,9 +1,22 @@
 from random_word import Random_word
+"""
+attrubites:
+    _picture
+    _random_word
+    _guess
 
+methods:
+    start game
+    _take_turn
+    _display_terminal_output
+    __int__
+
+
+"""
 '''This generates the number of blanks to match the random word'''
 random_word = Random_word()
 word = random_word.generate_word()
-print(word)
+# print(word)
 
 blanks = []
 

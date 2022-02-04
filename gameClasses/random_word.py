@@ -22,6 +22,6 @@ class Random_word:
 			
 			
 #test code:
-# random_word = Random_word()
-# word = random_word.generate_word()
-# print(word)
+#random_word = Random_word()
+#word = random_word.generate_word()
+#print(word)
